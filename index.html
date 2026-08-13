@@ -79,7 +79,7 @@
       <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-lg bg-white/70 border border-primary-100/70 shadow-soft">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor"><path
                 d="M6.75 3A.75.75 0 017.5 2.25h9a.75.75 0 01.75.75v1.5h1.5A2.25 2.25 0 0121 6.75v12A2.25 2.25 0 0118.75 21H5.25A2.25 2.25 0 013 18.75v-12A2.25 2.25 0 015.25 4.5h1.5V3zM5.25 6A.75.75 0 004.5 6.75v12a.75.75 0 00.75.75h13.5a.75.75 0 00.75-.75v-12A.75.75 0 0018.75 6H5.25zM9 3v1.5h6V3H9z"/></svg>
-        Last updated: <span>Feb 2026</span>
+        Last updated: <span>Aug 2026</span>
       </span>
         <button id="mobile-menu-btn"
                 class="md:hidden p-2 rounded-lg border border-primary-100/70 bg-white/70 hover:bg-primary-50 transition"
@@ -101,7 +101,7 @@
                  onerror="this.src='https://i.pravatar.cc/160?img=3'">
             <h1 class="mt-4 text-xl font-semibold text-slate-900 text-center">Amirhossein Roshandel</h1>
 
-            <a href="CV_Amirhossein_Roshandel_Feb_2026.pdf" download
+            <a href="CV_Amirhossein_Roshandel_Aug_2026.pdf" download
                class="mt-4 inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium shadow-soft hover:shadow-lg transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor" stroke-width="2">
@@ -167,6 +167,8 @@
                 </li>
                 <li><a href="#education"
                        class="block px-3 py-2 rounded-md hover:bg-primary-100/50 transition">Education</a></li>
+                <li><a href="#publications"
+                       class="block px-3 py-2 rounded-md hover:bg-primary-100/50 transition">Publications</a></li>
                 <li><a href="#experience" class="block px-3 py-2 rounded-md hover:bg-primary-100/50 transition">Experience</a>
                 </li>
                 <li><a href="#projects"
@@ -198,6 +200,9 @@
                         me</a></li>
                     <li><a href="#education"
                            class="block px-3 py-2 rounded-md hover:bg-primary-100/50 transition mobile-nav-link">Education</a>
+                    </li>
+                    <li><a href="#publications"
+                           class="block px-3 py-2 rounded-md hover:bg-primary-100/50 transition mobile-nav-link">Publications</a>
                     </li>
                     <li><a href="#experience"
                            class="block px-3 py-2 rounded-md hover:bg-primary-100/50 transition mobile-nav-link">Experience</a>
@@ -238,7 +243,8 @@
                 listen.
                 I study user intent and personalization through probabilistic and representation-based modeling,
                 exploring ways to embed LLMs in IR/CRS pipelines that reason, retrieve, and recommend without becoming
-                black boxes.
+                black boxes — a question I see as fundamentally about human-AI interaction and explainable AI: how do
+                we design systems whose reasoning people can understand, question, and steer.
                 I'm also interested in how culture, bias, and fairness shape these systems,
                 and how LLM behavior changes across different contexts.
             </p>
@@ -285,6 +291,21 @@
             </div>
         </section>
 
+        <!-- Publications -->
+        <section id="publications" class="glass rounded-2xl p-6 md:p-8 border border-primary-100/70 shadow-soft">
+            <h3 class="text-lg font-bold mb-4">Publications</h3>
+            <article class="p-4 rounded-xl border border-primary-100/70 bg-white/70">
+                <div class="flex items-start justify-between gap-3 mb-2">
+                    <h4 class="text-base font-semibold leading-snug">AuDiPE: Behavior-Grounded User Simulation via
+                        Audited Dialogue-based Profile Enrichment for Conversational Recommender Systems</h4>
+                    <span class="text-xs px-2.5 py-1 rounded-full bg-primary-100 text-primary-800 border border-primary-200 shrink-0 whitespace-nowrap">Under
+                        Review, EMNLP 2026</span>
+                </div>
+                <p class="text-sm text-slate-600">A. Roshandel*, E. Shahabi*, M. Sadeghi, A. Shakery <span
+                        class="text-xs text-slate-500">(*equal contribution)</span></p>
+            </article>
+        </section>
+
         <!-- Experience -->
         <section id="experience" class="glass rounded-2xl p-6 md:p-8 border border-primary-100/70 shadow-soft">
             <h3 class="text-lg font-bold mb-6">Experience</h3>
@@ -297,7 +318,7 @@
                                     href="https://www.linkedin.com/company/neshanmaps/posts/?feedView=all"
                                     target="_blank" rel="noopener noreferrer"
                                     class="text-primary-700 hover:underline font-medium">NeshanMaps</a></h4>
-                            <p class="text-sm text-slate-600">Mashhad, Iran • Mar 2025 – Present</p>
+                            <p class="text-sm text-slate-600">Mashhad, Iran • Mar 2025 – Mar 2026</p>
                         </div>
                     </div>
                     <ul class="list-disc list-inside text-sm leading-relaxed space-y-1.5">
@@ -467,7 +488,7 @@
                 </div>
                 <div class="p-3 rounded-md border border-primary-200 bg-white/70">
                     <h4 class="font-semibold mb-1">Languages</h4>
-                    <p>Persian (Native), English (Advanced)</p>
+                    <p>Persian (Native), English (Fluent)</p>
                 </div>
             </div>
         </section>
@@ -495,7 +516,7 @@
 
     // Scrollspy (order mirrors nav/content)
     const navList = document.getElementById('nav-list');
-    const sections = ['about', 'education', 'experience', 'projects', 'teaching', 'skills']
+    const sections = ['about', 'education', 'publications', 'experience', 'projects', 'teaching', 'skills']
         .map(id => document.getElementById(id)).filter(Boolean);
     const navLinks = navList ? Array.from(navList.querySelectorAll('a')) : [];
     const TOP_OFFSET = 130;
